@@ -1,0 +1,177 @@
+:root {
+    --list-width       : 12vw;
+    --footer-tint      : #5f5f5f;
+    --footer-tint-hover: #afafaf
+}
+
+@media screen and (max-width: 479px) {
+    :root {
+        --list-width: 30vw
+    }
+}
+
+body {
+    background-color: #141414;
+}
+
+#footer-icon-container {
+    width: var(--list-width);
+}
+
+ion-icon {
+    color    : var(--footer-tint);
+    font-size: 24px;
+    cursor   : pointer;
+}
+
+ion-icon:hover {
+    color: var(--footer-tint-hover)
+}
+
+#footer-menu {
+    list-style-type     : none;
+    columns             : auto;
+    margin-block-start  : 0em;
+    margin-block-end    : 1em;
+    margin-inline-start : 0px;
+    margin-inline-end   : 0px;
+    padding-inline-start: 1rem;
+}
+
+#footer-menu li {
+    display: inline-block;
+    width  : var(--list-width);
+}
+
+#footer-menu li a {
+    color: var(--footer-tint);
+}
+
+#footer-menu li a:hover {
+    color          : var(--footer-tint-hover);
+    text-decoration: none;
+}
+
+#service-code-btn {
+    color       : var(--footer-tint);
+    border-color: var(--footer-tint);
+}
+
+#service-code-btn:hover {
+    background-color: var(--footer-tint-hover);
+}
+
+#footer-copyright {
+    color: var(--footer-tint);
+}
+
+.iconSrc {
+    color : white;
+    margin: 10px;
+
+}
+
+.iconGift {
+    color : white;
+    margin: 10px;
+}
+
+.iconBell {
+    color : white;
+    margin: 10px;
+}
+
+#dropdownMenuButton {
+    color: white;
+}
+
+#dropdownMenuButton:hover {
+    background-color: transparent !important;
+}
+
+body {
+    background-color: #141414;
+
+}
+
+.movies-tiles img {
+    width     : 160px;
+    height    : 150px;
+    object-fit: cover;
+}
+
+.textOverImage:hover {
+    background-size: 100%;
+}
+
+.textOverImage:after {
+    position  : absolute;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    color     : black;
+    transition: 0.5%;
+}
+
+.title-wrapper h3 {
+    color         : white;
+    font-size     : 19px;
+    font-weight   : 300;
+    text-transform: uppercase;
+}
+
+.title-wrapper p {
+    font-weight: 700;
+    margin-left: 0.5rem;
+}
+
+.title-wrapper>*:not(a) {
+    display      : inline-block;
+    color        : white;
+    margin-bottom: 0;
+}
+
+/*Hover text- */
+.middle {
+    transition: .5s ease;
+    opacity   : 0;
+
+    top          : 50%;
+    left         : 50%;
+    transform    : translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align   : center;
+}
+
+.cont:hover .image {
+    opacity: 0.3;
+}
+
+.cont:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color           : white;
+    font-size       : 16px;
+    padding         : 16px 32px;
+}
+
+/*end Hover text- */
+
+img:hover {
+    transform : scale(1.5, 1.5);
+    transition: .3s transform;
+
+}
+
+#account-container {
+    background-color: rgb(241, 234, 234);
+}
+
+.paypal-logo {
+    content: url("https://i2.wp.com/akistro.com/wp-content/uploads/2017/11/Akieistro-Paypal-bw-payments-01.png?fit=1325%2C492&ssl=1");
+    width  : 100px;
+}
